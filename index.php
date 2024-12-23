@@ -29,6 +29,8 @@
           <li><a href="./edit.php" class="block py-2 px-4 hover:bg-blue-700">Edit Player</a></li>
           <li><a href="./afficher.php" class="block py-2 px-4 hover:bg-blue-700">affichage</a></li>
           <li><a href="./stati.php" class="block py-2 px-4 hover:bg-blue-700">Statistiques</a></li>
+          <li><a href="./Nationalite.php" class="block py-2 px-4 hover:bg-blue-700">add Nationalité</a></li>
+          <li><a href="./club.php" class="block py-2 px-4 hover:bg-blue-700">add clup</a></li>
         </ul>
       </nav>
     </aside>

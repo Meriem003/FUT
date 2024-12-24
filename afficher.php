@@ -91,7 +91,7 @@ include('./config.php');
             echo "Erreur lors de la suppression du joueur : " . $connection->error;
         }
     } else {
-        echo "ID de joueur manquant.";
+        // echo "ID de joueur manquant.";
     }
 
 ?>

@@ -53,7 +53,7 @@
         </form>
         </div>
         </section>
-        <section id="userInfoRow" class="bg-white p-6 rounded-lg shadow-lg max-w-6xl mx-auto mt-8 h-auto">
+        <section id="userInfoRow" class="bg-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto mt-8 h-auto">
           <div>
           <h1 class="text-2xl font-bold mb-4">Liste des Joueurs</h1>
 <table id="players-table" class="table-auto border-collapse border border-gray-300 w-full text-sm">

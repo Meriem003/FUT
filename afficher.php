@@ -85,15 +85,11 @@ include('./config.php');
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
         $sql = "DELETE FROM players WHERE id = $id";
+
         if ($connection->query($sql) === TRUE) {
             echo "Le joueur a été supprimé avec succès.";
-        } else {
-            echo "Erreur lors de la suppression du joueur : " . $connection->error;
         }
-    } else {
-        // echo "ID de joueur manquant.";
-    }
-
+      }
 ?>
   </tbody>
 </table>

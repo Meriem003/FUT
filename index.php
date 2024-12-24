@@ -204,22 +204,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $photo = $_POST['photo'];
       $position = $_POST['position'];
       $rating = $_POST['rating'];
-      $pace = $_POST['pace'];
-      $shooting = $_POST['shooting'];
-      $passing = $_POST['passing'];
-      $dribbling = $_POST['dribbling'];
-      $defending = $_POST['defending'];
-      $physical = $_POST['physical'];
+      $pace = $_POST['pace'].$_POST['diving'];
+      $shooting = $_POST['shooting'].$_POST['handling'];
+      $passing = $_POST['passing']. $_POST['kicking'];
+      $dribbling = $_POST['dribbling']. $_POST['reflexes'];
+      $defending = $_POST['defending']. $_POST['Speed'];
+      $physical = $_POST['physical']. $_POST['diving'];
       $nationality = $_POST['nationality'];
       $club = $_POST['club'];
 
       $sql_flag = "SELECT id_flag FROM flag WHERE flag_name = '$nationality'";
       $result_flag = $connection->query($sql_flag);
-      $id_flag = $result_flag->num_rows > 0 ? $result_flag->fetch_assoc()['id_flag'] : null;
 
       $sql_club = "SELECT id_club FROM club WHERE club_name = '$club'";
       $result_club = $connection->query($sql_club);
-      $id_club = $result_club->num_rows > 0 ? $result_club->fetch_assoc()['id_club'] : null;
 
       if ($id_flag && $id_club) {
           $sql = "INSERT INTO players (nom, photo, position, id_flag, id_club, rating, pace, shooting, passing, dribbling, defending, physical) 

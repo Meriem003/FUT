@@ -65,7 +65,6 @@
   </thead>
   <tbody>
 <?php
-// Correction de la requête SQL : ajouter les colonnes manquantes
 $sql = "SELECT club.id_club, club.club_name AS nom, club.url_club AS photo 
         FROM club";
 $result = $connection->query($sql);

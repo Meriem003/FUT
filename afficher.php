@@ -81,7 +81,6 @@ include('./config.php');
             echo "</tr>";
         }
     }
-    // Check if 'id' is set in the URL
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
         $sql = "DELETE FROM players WHERE id = $id";

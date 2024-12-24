@@ -65,13 +65,11 @@
     </thead>
 <tbody>
 <?php
-// Correction de la requête SQL : ajouter les colonnes manquantes
 $sql = "SELECT flag.id_flag, flag.flag_name AS nom, flag.url_flag AS photo 
         FROM flag";
 $result = $connection->query($sql);
 while ($row = $result->fetch_assoc()) {
     echo "<tr>";
-    // Utilisation de htmlspecialchars pour éviter les injections
     echo "<td><img src='" .$row['photo'] . "' alt='Flag Image' width='50' height='30'></td>";
     echo "<td>" .$row['nom'] . "</td>";
     echo "</tr>";
